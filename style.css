@@ -10,6 +10,24 @@ table, th, td {
 th {
   		background-color: #83A083;
 }
+nav{
+	background-color: #E2E7CC;
+	text-align: center;
+	color:antiquewhite;
+}
+a:link {
+  color:darkcyan;
+}
+a:visited {
+  color: #004D4D;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color:aquamarine;
+}
+
 body {
 	padding-top: 5vw;
 	padding-bottom: 5vw;
@@ -20,14 +38,14 @@ body {
 }
 h1 {
 	text-align: center;
-	color:olive;	
+	color: #51613b;	
 	font-size: 55px;
 }
 h2 {
-	color:darkgreen;
+	color: #283a1b;
 }
 h3, h4 {
-	color: olivedrab;
+	color: #435430;
 }
 p{
 	text-align: justify;
@@ -49,9 +67,19 @@ img.aligncenter {
 	margin-left: auto; 		
 	margin-right: auto; 
 }
-.alignright { float: right; }
-.alignleft { float: left; }
-.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { 
+	float: right; 
+	padding-left: 5px;
+}
+.alignleft { 
+	float: left; 
+	padding-right: 5px;
+}
+.aligncenter { 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
 .wp-caption { 
 	margin: 5px; 
 	padding: 5px; 
@@ -65,9 +93,23 @@ img.aligncenter {
 	margin:50px auto;
 }	
 .gallery figure{ 
-		margin:0px 20px;
-		display:inline-block;
-		text-decoration:none;
-		color:black;
-	}
-	
+	margin:0px 20px;
+	display:inline-block;
+	/*text-decoration:none;
+	color:black;*/
+	text-overflow: inherit;
+	color: #273A3A;
+}
+.in {
+	margin: 0px;
+	display:inline-block;
+	/* text-decoration:none; 
+	color:black;*/		
+	color: #273A3A;
+}
+figurecaption {
+	align-content: center;
+	text-wrap: wrap;
+	max-width: inherit;
+	color: #273A3A;
+}
