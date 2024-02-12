@@ -7,6 +7,7 @@
 </head>
 
 <body>
+	<h1 class="title">Trash of the Week</h1>
 	<nav>
 		<a href="./">Home</a> |
 		<a href="./reading">Reading</a> |
@@ -18,5 +19,84 @@
 	</nav>
 	
 	<h1>Trash of the Week - Survey</h1>
+	
+	<!-- Creating the form container  -->
+    <div class="container"> 
+        <h2>Survey Form</h2> 
+  
+        <!-- Contains error -->
+        <h4 id="errorText"></h4> 
+          
+        <!-- Form element  -->
+        <form id="surveyForm"> 
+  			<!--Name-->
+            <label for="name"> Name: </label><br> 
+            <input type="text" id="name" name="name" required><br> 
+			 <!--Age-->
+            <label for="age"> Age: </label><br> 
+            <input type="number" id="age" name="age" required><br> 
+    		<!--Name-->
+            <label> Favorite type of Sport </label>
+			<br> 
+            	<input type="radio" id="indoor" name="type" value="Indoor" required> 
+            	<label for="indoor"> Indoor </label>
+			<br> 
+            	<input type="radio" id="outdoor" name="type" value="Outdoor" required> 
+				<label for="outdoor"> Outdoor </label>
+			<br> 
+            	<input type="radio" id="both" name="type" value="Both" required> 
+				<label for="both"> Both </label>
+			<br> 
+  
+            <label for="favourite-sport"> Favorite Sport to Watch: </label>
+			<br> 
+            <input type="text" id="favorite-sport" name="favorite-sport" required><br> 
+            <label for="favorite--sport"> 
+                Favorite Sport to Play: 
+            </label><br> 
+            <input type="text" 
+                   id="favorite--sport" 
+                   name="favorite--sport" 
+                   required><br> 
+  
+            <label for="favorite-sport-person"> 
+                Favorite Sports-person: 
+            </label><br> 
+            <input type="text" 
+                   id="favorite-sport-person" 
+                   name="favorite-sport-person" 
+                   required><br> 
+  
+  
+            <label for="feedback"> 
+                Your Thoughts on Sports (optional):  
+            </label><br> 
+            <input type="textarea" 
+                   id="feedback" 
+                   name="feedback"><br> 
+  
+  
+            <button type="submit"> 
+                Submit 
+            </button> 
+        </form> 
+    </div> 
+  
+    <!-- linking javascript file  -->
+    <script src="script.js"></script> 
+	
+	
+	<p><a href="#">Back to top</a></p>
+	
+	<nav>
+		<a href="./">Home</a> |
+		<a href="./reading">Reading</a> |
+		<a href="./essay">Essay</a> |
+		<a href="./map">Map</a> |
+		<a href="./survey">Survey</a> |
+		<a href="./about">About</a> |
+		<a href="./ugly">Ugly</a>
+	</nav>
+	
 </body>
 </html>
