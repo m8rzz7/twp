@@ -8,7 +8,7 @@
 
 <body>
 	<h1 class="title">Trash of the Week</h1>
-	<nav>
+	<nav class="site-nav">
 		<a href="./">Home</a> |
 		<a href="./reading">Reading</a> |
 		<a href="./essay">Essay</a> |
@@ -21,6 +21,7 @@
 	<h1>Trash of the Week - Survey</h1>
 	
 	<!-- Creating the form container  -->
+	<div class="wrapper">
     <div class="container"> 
         <h2>Survey Form</h2> 
   
@@ -29,15 +30,17 @@
           
         <!-- Form element  -->
         <form id="surveyForm"> 
+			
   			<!--Name-->
             <label for="name"> Name: </label><br> 
             <input type="text" id="name" name="name" required><br> 
+			
 			 <!--Age-->
             <label for="age"> Age: </label><br> 
             <input type="number" id="age" name="age" required><br> 
-    		<!--Name-->
-            <label> Favorite type of Sport </label>
-			<br> 
+			
+    		<!--Favorite Type of Sport-->
+            <label> Favorite type of Sport </label><br> 
             	<input type="radio" id="indoor" name="type" value="Indoor" required> 
             	<label for="indoor"> Indoor </label>
 			<br> 
@@ -47,38 +50,24 @@
             	<input type="radio" id="both" name="type" value="Both" required> 
 				<label for="both"> Both </label>
 			<br> 
+			
+			<!--Favorite Sport to Watch-->
+            <label for="favourite-sport"> Favorite Sport to Watch: </label><br> 
+            	<input type="text" id="favorite-sport" name="favorite-sport" required><br> 
+            
+			<!--Favorite Sport to Play-->
+			<label for="favorite--sport"> Favorite Sport to Play: </label><br> 
+            <input type="text" id="favorite--sport" name="favorite--sport" required><br> 
   
-            <label for="favourite-sport"> Favorite Sport to Watch: </label>
-			<br> 
-            <input type="text" id="favorite-sport" name="favorite-sport" required><br> 
-            <label for="favorite--sport"> 
-                Favorite Sport to Play: 
-            </label><br> 
-            <input type="text" 
-                   id="favorite--sport" 
-                   name="favorite--sport" 
-                   required><br> 
+			<!--Favorite Sports Person-->
+            <label for="favorite-sport-person"> Favorite Sports-person: </label><br> 
+            <input type="text" id="favorite-sport-person" name="favorite-sport-person" required><br> 
+
+            <label for="feedback"> Your Thoughts on Sports (optional): </label><br> 
+            <input type="textarea" id="feedback" name="feedback"><br> 
   
-            <label for="favorite-sport-person"> 
-                Favorite Sports-person: 
-            </label><br> 
-            <input type="text" 
-                   id="favorite-sport-person" 
-                   name="favorite-sport-person" 
-                   required><br> 
-  
-  
-            <label for="feedback"> 
-                Your Thoughts on Sports (optional):  
-            </label><br> 
-            <input type="textarea" 
-                   id="feedback" 
-                   name="feedback"><br> 
-  
-  
-            <button type="submit"> 
-                Submit 
-            </button> 
+            <button type="submit"> Submit </button> 
+			
         </form> 
     </div> 
   
@@ -88,7 +77,7 @@
 	
 	<p><a href="#">Back to top</a></p>
 	
-	<nav>
+	<nav class="site-nav">
 		<a href="./">Home</a> |
 		<a href="./reading">Reading</a> |
 		<a href="./essay">Essay</a> |
@@ -97,6 +86,6 @@
 		<a href="./about">About</a> |
 		<a href="./ugly">Ugly</a>
 	</nav>
-	
+	</div>
 </body>
 </html>

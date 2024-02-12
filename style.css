@@ -1,6 +1,57 @@
 @charset "utf-8";
 /* CSS Document */
+*{}
 
+body {
+	/*teacher's padding*/
+	margin: 0;
+    padding: 0;
+	/* my padding:
+	padding-top: 0vw;
+	padding-bottom: 10vw;
+	padding-right: 10vw;	
+	padding-left: 10vw;
+	*/
+	background: #667E59; /* or use background-color*/
+	/*old color = #F9F3D7 */
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+h1 {
+	text-align: center;
+	color: #51613b;	
+	font-size: 55px;
+}
+h1.title{
+	display: block;
+	margin-bottom: 0;
+	margin-top: 0;
+	min-height: 300px;
+	background-image: url("images/field.jpg");
+	padding-top: 50px;
+	font-size: 130px;
+	text-align: center;
+	font-variant-caps: all-small-caps;
+	font-style: oblique;
+	color: #51613b;
+}
+h2 {
+	color: #283a1b;
+}
+h3, h4 {
+	color: #435430;
+}
+p{
+	text-align: justify;
+	color: #273A3A;
+}
+p img { 
+	padding: 0; 
+	max-width: 100%; 
+}
+em.cap {
+	text-weight: bold;
+	font-style: normal;
+}
 table, th, td {
 		border:1px solid black;
 		border-collapse: collapse;
@@ -15,6 +66,17 @@ nav{
 	text-align: center;
 	color: darkcyan;
 	padding-bottom: 3px;
+	align-content: center;
+}
+.site-nav{
+	border: 3px solid #A9BCC0;
+	background: #D9E1E3;
+}
+.page-nav{
+	border: 3px solid #B3C0A9;
+}
+.site-nav a, .page-nav a{
+	text-decoration: none;
 }
 a:link {
   color:darkcyan;
@@ -28,46 +90,6 @@ a:hover {
 a:active {
   color:aquamarine;
 }
-body {
-	padding-top: 0vw;
-	padding-bottom: 10vw;
-	padding-right: 10vw;	
-	padding-left: 10vw;
-	background: #F9F3D7; /* or use background-color*/
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-}
-h1 {
-	text-align: center;
-	color: #51613b;	
-	font-size: 55px;
-}
-h1.title{
-	display: block;
-	margin-bottom: 0;
-	min-height: 200px;
-	background-image: url("images/field.jpg");
-	
-	text-align: center;
-	font-variant-caps: all-small-caps;
-	font-style: oblique;
-	font-size: 130px;
-	color: #51613b;
-}
-h2 {
-	color: #283a1b;
-}
-h3, h4 {
-	color: #435430;
-}
-p{
-	text-align: justify;
-	color: #273A3A;
-}
-em.cap {
-	text-weight: bold;
-	font-style: normal;
-}
-p img { padding: 0; max-width: 100%; }
 img.alignright { 
 	padding: 4px; 
 	margin: 0 0 2px 7px; 
@@ -104,6 +126,7 @@ img.aligncenter {
 	font-size:90%; 
 	color: black 
 }
+
 .gallery{ 
 	text-align: center; 
 	margin:50px auto;
@@ -127,9 +150,15 @@ img.aligncenter {
 	
 }
 div{
-	
-
 	word-wrap: break-word;
+}
+.wrapper{
+	background: #F9F3D7;
+    width: 972px;  /* give the element a fixed width */ 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
+	/* adds 20 px top and bottom, and 40 px, left and right*/
 }
 figure{
 	display: inline-block;
@@ -170,7 +199,6 @@ div.block{
 	box-shadow: 0 0 10px
 		rgba(0, 0, 0, 0.1); 
 } 
-
 label { 
 	margin-top: 1rem; 
 } 
@@ -179,7 +207,6 @@ input {
 	box-sizing: border-box; 
 	margin: 1.2rem 0; 
 } 
-
 /* Styling specific input types */
 input[type="text"], 
 input[type="number"] { 
@@ -189,7 +216,6 @@ input[type="textarea"] {
 	width: 100%; 
 	height: 10rem; 
 } 
-
 button { 
 	width: 100%; 
 	padding: 10px; 
@@ -199,15 +225,12 @@ button {
 	border-radius: 5px; 
 	cursor: pointer; 
 } 
-
 button:hover { 
 	background-color: olivedrab; 
 } 
-
 .error { 
 	border: 3px solid red; 
 } 
-
 .errorText { 
 	padding: 1rem; 
 	border: 2px solid red; 
@@ -216,7 +239,6 @@ button:hover {
 	font-size: 1.2rem; 
 	color: #273A3A;
 } 
-
 .successText { 
 	padding: 1rem; 
 	border: 4px solid green; 
