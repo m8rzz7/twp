@@ -21,21 +21,23 @@
 	body {
 		padding-top: 19vw;
 		padding-bottom: 2vw;
-		padding-right: 2vw;
-		padding-left: 20vw;
 		
-		background-color: chartreuse;
+		background-image: repeating-radial-gradient(red, yellow, green, purple);
+		background-attachment: scroll;
 		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
 	}
 	h1 {
-		text-align: justify;
-		color:aqua;	
-		font-size: 100px;
+		text-align: right;
+		color: aqua;	
+		text-decoration-color: red;
+		text-decoration-style: wavy;
+		text-decoration: line-through;
+		font-size: 200px;
 		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 	}
 	h2 {
 		color:yellow;
-		background-image: url("images/snail.jpg");
+		background-image: repeating-radial-gradient(cyan, hotpink, olive, orange);
 		font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 		font-size: 80px;
 		text-align: center;
@@ -51,6 +53,8 @@
 		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 		font-weight: 900;
 		border: 5px inset #FF00CA;
+		background-image: repeating-radial-gradient(cyan, hotpink, olive, orange);
+
 	}
 	h4{
 		color: mediumpurple;
@@ -71,7 +75,7 @@
 	p{
 		text-align: center;
 		color: yellow;
-		background-color:darkorchid;
+		background-image: repeating-radial-gradient(purple, green, yellow, red);
 		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 		font-display: block;
 		font-size: 10px;
@@ -80,14 +84,14 @@
 	}
 	p.caption{
 		align-content: space-between;
-		background-color: darkslateblue;
-		border-width: medium;
+		background-image: repeating-linear-gradient(red,blue);
+		border: 5px solid magenta;
 	}
 	p.green{
 		background-color:greenyellow;
 	}
 	em.blanc{
-		background-color:chartreuse;
+		background-image: repeating-radial-gradient(black,red, darkblue);
 		font-weight: 900;
 	}
 	em.hot {
@@ -98,6 +102,8 @@
 		letter-spacing: inherit;
 		font-stretch: ultra-expanded;
 		font-size: 30px;
+		background-image: repeating-radial-gradient(cyan, hotpink, olive, orange);
+
 	}
 	ul,ol{
 		background-color:darkblue;
@@ -108,20 +114,57 @@
 	li.silly{
 		text-align: right;
 		font-variant-caps: all-small-caps;
+		text-decoration:overline;
+		text-decoration-color: aqua;
+		text-decoration-style: wavy;
+		text-emphasis-style: triangle;
+		text-emphasis-color: crimson;
+
 	}
+	
+	div.go {
+		width: 100px;
+		height: 100px;
+		background-image: repeating-radial-gradient(orange, green, cornflowerblue, antiquewhite);
+		animation-name: example;
+		animation-duration: 4s;
+		color:aqua;
+	}
+	@keyframes example {
+		0%   {background-color: red;}
+		25%  {background-color: yellow;}
+		50%  {background-color: blue;}
+		100% {background-color: green;}
+	}
+	
 	img.alignright { 
 		float: right; margin: 0 0 1em 1em; 
 	}
 	img.alignleft { 
 		float: left; margin: 0 1em 1em 0; 
 	}
+	
+	
 	img.aligncenter { 
 		display: block; margin-left: auto; margin-right: auto; 
 	}
-	
 	.alignright { float: right; }
 	.alignleft { float: left; }
 	.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+	
+	.blur {filter: blur(4px);}
+	.brightness {filter: brightness(250%);}
+	.contrast {filter: contrast(180%);}
+	.grayscale {filter: grayscale(100%);}
+	.huerotate {filter: hue-rotate(180deg);}
+	.invert {filter: invert(100%);}
+	.opacity {filter: opacity(50%);}
+	.saturate {filter: saturate(7);}
+	.sepia {filter: sepia(100%);}
+	.shadow {filter: drop-shadow(8px 8px 10px green);
+
+	
+	
 	
 </style>
 	
@@ -217,39 +260,41 @@
 	
 	<h2 id="gallery">Gallery</h2>
 	<p class="caption">
-		<img alt="golden hoop earrings" src= "images/earrings.jpg" width="400" class="alignleft">
+		<br><br>
+		<img alt="golden hoop earrings" src= "images/earrings.jpg" width="400" class="alignleft invert">
 		<em class="blanc">hoop earrings</em>
+		<br>
 	</p>
 	<p>
-		<img alt="wooden christmas decorations" src="images/xmas-decor.jpg" width="350" class="alignright">
+		<img alt="wooden christmas decorations" src="images/xmas-decor.jpg" width="350" class="alignright huerotate">
 		<em class="blanc"><br>wooden christmas decorations<br></em>
 	</p>
 	<p>
-		<img alt="pint-for-a-pint voucher" src="images/pint.jpg" width="100" class="aligncenter">
+		<img alt="pint-for-a-pint voucher" src="images/pint.jpg" width="100" class="aligncenter contrast">
 		<em class="blanc">pint-for-a-pint voucher</em>
 	</p>
 	<p class="caption">
-		<img alt="meat is muder by the smiths cassette tape" src="images/cassette.jpg" width="750" class="aligncenter">
+		<img alt="meat is muder by the smiths cassette tape" src="images/cassette.jpg" width="750" class="aligncenter sepia">
 		<em class="hot"><em>Meat is Murder</em> by The Smiths cassette tape</em>
 	</p>
 	<p class="caption">
-		<img alt="handmade candle" src="images/candle.jpg" width="300" class="alignleft">
+		<img alt="handmade candle" src="images/candle.jpg" width="300" class="alignleft brightness">
 		<em aria-checked="mixed">handmade candle</em>
 	</p>
 	<p class="green">
-		<img alt="orange foam earplugs" src="images/earplugs.jpg" width="60" class="alignright">
+		<img alt="orange foam earplugs" src="images/earplugs.jpg" width="60" class="alignright blur">
 		<em class="hot">earplugs from live show</em>
 	</p>
 	<p>
-		<img alt="beauty of joseon sunscreen" src="images/boj-spf.jpg" width="30" class="aligncenter">
+		<img alt="beauty of joseon sunscreen" src="images/boj-spf.jpg" width="30" class="aligncenter huerotate">
 		<em>Beauty of Joseon Sunscreen</em>
 	</p>
 	<p>
-		<img alt="byoma milky oil cleanser face wash" src="images/byoma-oil.jpg" width="467" class="alignright">
+		<img alt="byoma milky oil cleanser face wash" src="images/byoma-oil.jpg" width="467" class="alignright saturate">
 		<em class="blanc">Byoma Milky Oil Cleanser Face Wash</em>
 	</p>
 	<p class="green">
-		<img alt="iunik centella calming gel cream" src="images/gel.jpg" width="607" class="aligncenter">
+		<img alt="iunik centella calming gel cream" src="images/gel.jpg" width="607" class="aligncenter invert">
 		Iunik Centella Calming Gel Cream
 	</p>
 	
@@ -289,7 +334,9 @@
 		</tr>
 	</table>
 	<p><a href="#">Back to top</a></p>
-	
+	<div class="go">
+		<p>woohoo!</p>
+	</div>
 	<h2 id="profile">Profile: Item of the Week—<em>Meat is Murder</em> cassette </h2>
 	<h3>Three reasons I chose this item</h3>
 	<ol>
