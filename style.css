@@ -30,7 +30,7 @@ a:active {
 
 body {
 	padding-top: 5vw;
-	padding-bottom: 5vw;
+	padding-bottom: 10vw;
 	padding-right: 10vw;	
 	padding-left: 10vw;
 	background: #F9F3D7; /* or use background-color*/
@@ -51,6 +51,10 @@ p{
 	text-align: justify;
 	color: #273A3A;
 }
+em.cap {
+	text-weight: bold;
+	font-style: normal;
+}
 p img { padding: 0; max-width: 100%; }
 img.alignright { 
 	padding: 4px; 
@@ -63,7 +67,7 @@ img.alignleft {
 	display: inline; 
 }
 img.aligncenter { 
-	display: block; 
+	display:inline;
 	margin-left: auto; 		
 	margin-right: auto; 
 }
@@ -89,7 +93,7 @@ img.aligncenter {
 	color: black 
 }
 .gallery{ 
-	text-align:center; 
+	text-align: center; 
 	margin:50px auto;
 }	
 .gallery figure{ 
@@ -106,10 +110,15 @@ img.aligncenter {
 	/* text-decoration:none; 
 	color:black;*/		
 	color: #273A3A;
+	word-wrap: normal;
+	text-align:center; 
+}
+div{
+	
+
+	word-wrap: break-word;
 }
 figurecaption {
-	align-content: center;
-	text-wrap: wrap;
-	max-width: inherit;
+	overflow-wrap: break-word;	
 	color: #273A3A;
 }
