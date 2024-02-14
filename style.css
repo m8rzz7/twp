@@ -180,6 +180,9 @@ div.block{
 .inline {
 	display: inline;
 }
+.indent-left{
+	margin-left: 400px;
+}
 
 /* Style.css */
 /*body { 
