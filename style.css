@@ -49,7 +49,6 @@ h1.title{
 	/*text-align: right;*/
 	font-style: oblique;
 }
-
 .hed a{
 	line-height: 150%;
 	padding-bottom: 10px;
@@ -216,8 +215,20 @@ div.block{
 	margin-left: 400px;
 }
 /*survey*/
+.container { 
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #BDC664;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px
+        rgba(0, 0, 0, 0.1); 
+} 
 label { 
 	margin-top: 1rem; 
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	color: #273A3A;
 } 
 input { 
 	padding: 10px; 
@@ -229,6 +240,9 @@ input {
 } 
 /* Styling specific input types */
 input[type="text"], input[type="number"] { 
+	font-size: 20px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #273A3A;
 	box-sizing: border-box; 
 	padding: 10px; 
 	width: 100%; 
@@ -255,6 +269,7 @@ textarea{
   	resize: none;
 	text-align: justify;
 	color: #273A3A;
+	font-size: 20px;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	
 }
@@ -263,6 +278,8 @@ button {
 	padding: 10px; 
 	background-color: olive; 
 	color: white; 
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
 	border: none; 
 	border-radius: 5px; 
 	cursor: pointer; 
