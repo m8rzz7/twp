@@ -79,18 +79,42 @@ p img {
 	padding: 0; 
 	max-width: 100%; 
 }
+p.caption{
+	font-size: 16px;
+	font-weight: 900;
+	margin-top: 5px;
+	padding: 0;
+	line-height: 50%;
+	text-align: center;
+}
 em.cap {
 	text-weight: bold;
 	font-style: normal;
 }
+/*table{
+	display: block;
+	width: 100%;
+	border:1px solid black;
+	
+}*/
 table, th, td {
-		border:1px solid black;
-		border-collapse: collapse;
-		padding-left: 15px;
-		padding-right:15px;
-	}
+	border:1px solid black;
+	border-collapse: collapse;
+	padding-left: 15px;
+	padding-right:15px;
+	max-width: inherit;
+	/*column-width: inherit;*/
+	column-width: 100%;	
+	color: #273A3A;
+}
 th {
-  		background-color: #83A083;
+	background-color: #83A083;
+	color: black;
+}
+.wrapper .tab{
+	align-content:center; 
+	max-width:inherit;
+	min-width: inherit;
 }
 nav{
 	background-color: #E2E7CC;
@@ -169,8 +193,24 @@ img.aligncenter {
 	text-overflow: inherit;
 	color: #273A3A;
 }
-.galler-grid {
+/* gallery grid CSS */
+.gallery-grid {
 	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-row-gap: 20px ;
+	justify-items: center;
+	align-items: start;
+	justify-content: space-between;
+}
+.gallery-item {
+	width: 250px; /*should match the width of your images + width of border (if any) */
+	text-align: center;
+}     
+/* css for styling the p/caption under the image */       
+.gallery-item p {
+	margin: .25em 0;
+	line-height: 135%;
+	text-align: center;
 }
 .in {
 	margin: 0px;
@@ -182,12 +222,16 @@ img.aligncenter {
 	text-align:center; 
 	
 }
+/*icon CSS*/
+.icon-hot{
+	color: magenta;
+}
 div{
 	word-wrap: break-word;
 }
 .wrapper{
 	background: #F9F3D7;
-    width: 65%;  /* give the element a fixed width */ 
+    width: 70%;  /* give the element a fixed width */ 
     margin-left: auto;
     margin-right: auto;
     padding: 20px 40px;
