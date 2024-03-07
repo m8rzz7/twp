@@ -72,7 +72,10 @@ h3, h4 {
 	color: #435430;
 }
 p{
-	text-align: justify;
+	/*text-align: justify;*/
+	color: #273A3A;
+}
+ul, ol {
 	color: #273A3A;
 }
 p img { 
